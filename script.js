@@ -82,11 +82,11 @@ function toggleSidebar() {
     if (sidebar.style.width === "300px") {
         sidebar.style.width = "0";
         burgerMenu.classList.remove('active');
-        burgerMenu.style.display = 'block'
+        burgerMenu.style.display = 'block';
     } else {
-        sidebar.style.width = "3e00px";
+        sidebar.style.width = "300px";
         burgerMenu.classList.add('active'); // Animate burger icon to X
-        burgerMenu.style.display = 'none'
+        burgerMenu.style.display = 'none';
     }
 }
 
