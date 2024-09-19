@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="bilder/Download.png">
+    <!-- Boxicons for Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js" defer></script>
+    <title>Netto Supermarkt</title>
+</head>
+<body>
+<!-- Header-Bereich mit Navigation und Suchleiste -->
+<header class="site-header">
+    <div class="header-container">
+        <!-- Logo Section -->
+        <div class="header-logo">
+            <a href="#"><img src="bilder/Netto_Marken-Discount_2018_logo.svg.png" alt="Netto Logo"></a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="header-search">
+            <input type="text" placeholder="Suchbegriff / Artikelnummer / Lieblingsprodukt">
+            <button type="submit" aria-label="Search">
+                <box-icon name='search-alt-2' color='#202020' ></box-icon>
+            </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="burger-menu" id="burgerMenu" onclick="toggleSidebar()">☰</div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#"><box-icon type='solid' name='book-open'></box-icon> Prospekte</a></li>
+                <li><a href="#"><box-icon name='user' color='#202020' ></box-icon> Mein Konto</a></li>
+                <li><a href="#"><box-icon name='store'></box-icon> Filiale Finden</a></li>
+                <li><a href="#"><box-icon name='cart'></box-icon> Warenkorb</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+        <a href="#"><box-icon type='solid' name='book-open'></box-icon> Prospekte</a>
+        <a href="#"><box-icon name='user' color='#202020' ></box-icon> Mein Konto</a>
+        <a href="#"><box-icon name='store'></box-icon> Filiale Finden</a>
+        <a href="#"><box-icon name='cart'></box-icon> Warenkorb</a>
+    </div>
+</header>
+
+<!-- Hauptinhalt der Seite -->
+<main>
+    <!-- Navigation für Kategorien -->
+    <section>
+        <div class="container-list">
+            <ul role="list">
+                <!-- Listenelemente für die Hauptkategorien -->
+                <li class="lists"><a href="">Neuheiten</a></li>
+                <li class="lists"><a href="">Angebote</a></li>
+                <li class="lists"><a href="">Lebensmittel</a></li>
+                <li class="lists"><a href="">Wein</a></li>
+                <li class="lists"><a href="">Drogerie</a></li>
+                <li class="lists"><a href="">Garten</a></li>
+                <li class="lists"><a href="">Baumarkt</a></li>
+                <li class="lists"><a href="">Solar</a></li>
+                <li class="lists"><a href="">Wohnen</a></li>
+                <li class="lists"><a href="">Freizeit</a></li>
+                <li class="lists"><a href="">Haushalt</a></li>
+                <li class="lists"><a href="">Multimedia</a></li>
+                <li class="lists"><a href="">Sale</a></li>
+                <li class="lists"><a href="">Reisen & mehr</a></li>
+                <li class="lists"><a href="">Rezepte</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <div class="slider">
+            <div class="slider-track">
+                <div class="slider-item active">
+                    <img src="bilder/mainstage_links_desktop_maxxicharge.jpg" alt="Produktbild 1">
+                </div>
+                <div class="slider-item">
+                    <img src="bilder/3824_NergiVermarktung_HP_Header_d_1300x885.jpg" alt="Produktbild 2">
+                </div>
+                <div class="slider-item">
+                    <img src="bilder/mainstage_links_desktop_TopDeals_kw38.jpg" alt="Produktbild 3">
+                </div>
+                <div class="slider-item">
+                    <img src="bilder/mainstage_links_desktop_Best-of_kw27.jpg" alt="Produktbild 4">
+                </div>
+            </div>
+            <!-- Navigation Arrows -->
+            <button class="slider-nav prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="slider-nav next" aria-label="Next Slide">&#10095;</button>
+
+            <!-- Dots Navigation -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for Google Maps -->
+    <section class="map-section">
+        <h2>Unsere Netto-Filialen</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.4529564478166!2d12.00083067659871!3d47.98563286172673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479df8a302e56d25%3A0xcb6954dbb89f9e0c!2sNetto%20Marken-Discount!5e0!3m2!1sde!2sde!4v1726607608796!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+
+    <!-- Bereich für Top-Angebote -->
+    <section>
+        <div class="top-angebote">
+            <div class="col">
+                <img src="bilder/shopping-cart-256.png" alt="Einkaufswagen">
+                <h1>Top Angebote</h1>
+            </div>
+            <div class="col">
+                <button type="submit">Online Wochenangebote</button>
+                <button type="submit">Lebensmittel-Vorratspacks</button>
+                <button type="submit">E-Roller</button>
+                <button type="submit">Online Rabattcodes</button>
+                <button type="submit">Solar</button>
+                <button type="submit">Wein & Sekt</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <h2>Unsere Produkte</h2>
+        <div class="product-grid">
+
+            <!-- Produkt 1 -->
+            <div class="product-card">
+                <div class="product-badge">Kaufen & gewinnen⁴</div>
+                <div class="product-image">
+                    <img src="bilder/produkte/2547507000_prod_001.avif" alt="VIRON XI-1200-S E-Scooter">
+                </div>
+                <div class="product-info">
+                    <p class="product-rating"><img src="bilder/produkte/deutschland.webp" alt="Top Siegel">1.436 Zusatz-Punkte</p>
+                    <h3>VIRON XI-1200-S E-Scooter mit Straßenzulassung ABE</h3>
+                    <div class="product-price-section">
+                        <span class="discount-badge">-28%</span>
+                        <div class="prices">
+                            <p class="old-price">UVP 999,99 €</p>
+                            <p class="current-price">719,99 €*</p>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+            </div>
+
+            <!-- Produkt 2 -->
+            <div class="product-card">
+                <div class="product-badge">Top Angebot</div>
+                <div class="product-image">
+                    <img src="bilder/produkte/2479796000_prod_001.avif" alt="Samsung Galaxy A32">
+                </div>
+                <div class="product-info">
+                    <p class="product-rating"><img src="bilder/produkte/deutschland.webp" alt="Top Siegel">1.200 Zusatz-Punkte</p>
+                    <h3>REFURBISHED – Samsung Galaxy A32 A326B Dualsim 5G Android 11 Smartphone 64GB 4GB 64MP Schwarz</h3>
+                    <div class="product-price-section">
+                        <span class="discount-badge">-15%</span>
+                        <div class="prices">
+                            <p class="old-price">UVP 299,99 €</p>
+                            <p class="current-price">254,99 €*</p>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+            </div>
+
+            <!-- Produkt 3 -->
+            <div class="product-card">
+                <div class="product-badge">Neu</div>
+                <div class="product-image">
+                    <img src="bilder/produkte/8600369900_65536_prod_001.avif" alt="Apple iPad 2022">
+                </div>
+                <div class="product-info">
+                    <p class="product-rating"><img src="bilder/produkte/deutschland.webp" alt="Top Siegel">1.500 Zusatz-Punkte</p>
+                    <h3>Apple iPad 2022 10,9 Zoll 10. Generation - 64GB - Wi-Fi</h3>
+                    <div class="product-price-section">
+                        <span class="discount-badge">-10%</span>
+                        <div class="prices">
+                            <p class="old-price">UVP 699,99 €</p>
+                            <p class="current-price">629,99 €*</p>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+            </div>
+
+            <!-- Produkt 4 -->
+            <div class="product-card">
+                <div class="product-badge">Exklusiv</div>
+                <div class="product-image">
+                    <img src="bilder/produkte/8600373200_3640_prod_001.avif" alt="Makita Akku Spezialset">
+                </div>
+                <div class="product-info">
+                    <p class="product-rating"><img src="bilder/produkte/deutschland.webp" alt="Top Siegel">2.000 Zusatz-Punkte</p>
+                    <h3>Makita Akku Spezialset CXT CLX237SAJ + 50 € Filial-Gutschein</h3>
+                    <div class="product-price-section">
+                        <span class="discount-badge">-20%</span>
+                        <div class="prices">
+                            <p class="old-price">UVP 199,99 €</p>
+                            <p class="current-price">159,99 €*</p>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">In den Warenkorb</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Neuen Abschnitt für Zusatzinformationen -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Abonnieren Sie unseren Newsletter!</h2>
+            <p>Erhalten Sie die neuesten Angebote und Rabatte direkt in Ihr Postfach.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Ihre E-Mail-Adresse" required>
+                <button type="submit">Abonnieren</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-column">
+            <h4>Informationen</h4>
+            <ul>
+                <li><a href="#">Über Netto</a></li>
+                <li><a href="#">Karriere</a></li>
+                <li><a href="#">Filialfinder</a></li>
+                <li><a href="#">Angebote</a></li>
+                <li><a href="#">Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Kundenservice</h4>
+            <ul>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Rückgabe & Umtausch</a></li>
+                <li><a href="#">Versandinformationen</a></li>
+                <li><a href="#">Datenschutz</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Rechtliches</h4>
+            <ul>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">AGB</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Cookie-Einstellungen</a></li>
+                <li><a href="#">Widerrufsrecht</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Folgen Sie uns</h4>
+            <div class="social-icons">
+                <a href="#"><box-icon name='facebook' type='logo' color='#202020' ></box-icon></a>
+                <a href="#"><box-icon name='instagram' type='logo' color='#202020' ></box-icon></a>
+                <a href="#"><box-icon name='twitter' type='logo' color='#202020' ></box-icon></a>
+                <a href="#"><box-icon name='youtube' type='logo' color='#202020' ></box-icon></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Netto Marken-Discount AG & Co. KG - Alle Rechte vorbehalten</p>
+        <ul class="legal-links">
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">AGB</a></li>
+            <li><a href="#">Cookie-Einstellungen</a></li>
+        </ul>
+    </div>
+</footer>
+<button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+    <box-icon name='up-arrow-alt' color='#ffffff' ></box-icon>
+</button>
+</body>
+</html>
