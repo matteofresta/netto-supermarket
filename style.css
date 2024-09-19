@@ -433,15 +433,26 @@ body
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .slider-nav {
-        font-size: 1.5rem;
+@media (max-width: 768px)
+{
+    .slider-section
+    {
+        height: 15rem;
+    }
+    .slider-nav
+    {
+        font-size: 1rem;
         padding: 0.3rem;
+    }
+    .slider-nav.prev,
+    .slider-nav.next
+    {
+        width: 2rem;
+        height: 2rem;
     }
 
     .dot {
-        height: 10px;
-        width: 10px;
+        display: none;
     }
 }
 
